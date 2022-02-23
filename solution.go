@@ -21,7 +21,7 @@ type myint int
 func CalcSquare(sideLen float64, sidesNum myint) float64 {
 	var ans float64
 	if sidesNum == 0 {
-		ans = sideLen * math.Pi / 4
+		ans = sideLen * sideLen * math.Pi
 	} else if sidesNum == 3 {
 		ans = math.Sqrt(3) / 4 * sideLen * sideLen
 	} else if sidesNum == 4 {
